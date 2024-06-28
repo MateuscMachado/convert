@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Upload Word Document</title>
+    <title>Upload de Documento Word</title>
 </head>
 <body>
     <input type="file" id="fileInput" />
-    <button onclick="uploadFile()">Upload and Convert</button>
+    <button onclick="uploadFile()">Upload e Converter</button>
 
     <script>
         async function uploadFile() {
             const fileInput = document.getElementById('fileInput');
             if (fileInput.files.length === 0) {
-                alert("Please select a file.");
+                alert("Por favor selecionar um arquivo.");
                 return;
             }
 
@@ -39,7 +39,7 @@
                 }
             } catch (error) {
                 console.error('Error:', error);
-                alert('An error occurred while uploading the file.');
+                alert('Um erro ocorreu ao carregar o arquivo.');
             }
         }
     </script>
